@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Geoffrey's Weather App !</title>
+  <meta name="keywords" content="weather meteo test">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="description" content="Super Weather App !">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/icons/icon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+  <div id="container">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+
+
+    <section id="main_content">
+      <div id="head">
+        <div class="meteo_box">
+         
+            <form class="input">
+              <div class="input-container">
+              <input  type="text" name="city" id="city" >
+              <label for="city" class="label">Rechercher une ville</label>
+              <div class="underline"></div>
+            </div></form>
+            
+
+          <div class="meteo_infos">
+            <div class="basic_infos">
+              <span class="city"></span>
+              <span class="date"></span>
+            </div>
+
+            <div class="infos  is_hidden">
+              <div class="infobox info_gen">
+                <img class="info_img conditionimg" src="" alt="">
+                <span class="condition"></span>
+              </div>
+              <div class="infobox degrees">
+                <img class="info_img" src="/assets/icons/temperature.png" alt="">
+                <span class="temp"></span>
+              </div>
+              <div class="infobox">
+                <img class="info_img humidityimg" src="" alt="">
+                <span class="humidity"></span> </div>
+              <div class="infobox">
+                <img class="info_img windimg" src="" alt="">
+                <span class="wind"></span>
+                 </div>
+              <div class="infobox"> 
+                <img class="info_img uvimg" src="" alt="">
+                <span class="uv"></span>
+              </div>
+              <div class="infobox"> 
+                <img class="info_img cloudimg" src="" alt="">
+                <span class="cloud"></span>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <div id="links">
+      </div>
+    </section>
+  </div>
+
+  <div id="footer">
+
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script defer src="/assets/js/bideo.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
